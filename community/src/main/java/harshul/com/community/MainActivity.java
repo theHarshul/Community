@@ -214,8 +214,7 @@ public class MainActivity extends FirebaseLoginBaseActivity {
 
         // Replace whatever is in the fragment_container view with this fragment,
         // and add the transaction to the back stack so the user can navigate back
-        transaction.replace(R.id.fragment_container, firstFragment, TAG_FRAGMENT);
-        //transaction.addToBackStack(null);
+        transaction.replace(R.id.fragment_container, firstFragment, TAG_FRAGMENT).addToBackStack(null);
 
         // Commit the transaction
         transaction.commit();
